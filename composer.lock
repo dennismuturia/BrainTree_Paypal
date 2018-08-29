@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "365ac22f4b6e9523816678bba4a3843e",
+    "content-hash": "ada8f4cf3b2187d6a4f73885eb6de318",
     "packages": [
         {
             "name": "monolog/monolog",
@@ -698,6 +698,50 @@
                 "url"
             ],
             "time": "2016-06-29T05:40:00+00:00"
+        },
+        {
+            "name": "twig/twig",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "f6e49636d1cef286262f85835f7d19ec3df61b4c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/f6e49636d1cef286262f85835f7d19ec3df61b4c",
+                "reference": "f6e49636d1cef286262f85835f7d19ec3df61b4c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2012-01-04T13:20:58+00:00"
         }
     ],
     "packages-dev": [

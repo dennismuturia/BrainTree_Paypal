@@ -11,10 +11,17 @@ $app->register(new Silex\Provider\MonologServiceProvider(), array(
     'monolog.logfile' => 'php://stderr',
   ));
 
+// Register view rendering
+$app->register(new Silex\Provider\TwigServiceProvider(), array(
+    'twig.path' => __DIR__.'/views',
+));
+
 $app->get('/', function() use($app){
-    return '<h2><?php echo ($clientTken = Braintree_Clienttoken::generate());?></h2>';
+    $app['monolog']->addDebug('logging output.');
+    return $app['twig']->render('index.twig');
 });
 echo ($clientTken = Braintree_Clienttoken::generate());
+$name = $clientTken = Braintree_Clienttoken::generate();
 
 $app->run();
 ?>
