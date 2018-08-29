@@ -15,7 +15,9 @@
         "ext-dom": "*",
         "ext-hash": "*",
         "ext-openssl": "*",
-        "ext-xmlwriter": "*"
+        "ext-xmlwriter": "*",
+        "silex/silex": "2.0",
+        "monolog/monolog": "^1.23"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*"
